@@ -2,6 +2,10 @@
 ### Showcasing My GitHub Repositories
 This is a solution to the AltSchool Frontend Engineering Intermediate Module Assesment
 
+##### Screenshots (black & white bg)
+![my-github-repo-black](https://github.com/godswillnwabu/my-github-repos/assets/112035653/95cec2c7-e429-4e07-a7c6-004cb2cb84df)
+![my-github-repo-white](https://github.com/godswillnwabu/my-github-repos/assets/112035653/e8e971f0-9e0b-4892-b37e-ce0d755faaf3)
+
 ### Table of Contents
 * Overview
     - [The Questions](#the-questions)
