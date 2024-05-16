@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+.gitRepoAction a {
+    color: #151419;
+}
+
 .gitRepoAction:hover {
     text-decoration: underline;
 }
