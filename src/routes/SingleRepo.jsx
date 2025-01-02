@@ -16,7 +16,7 @@ export default function SingleRepo() {
             axios
                 .get(`https://api.github.com/repos/godswillnwabu/${name}`, {
                     headers: {
-                        Authorization: "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",
+                        Authorization: "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",
                     },
                 })
                 .then((response) => {

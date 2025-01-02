@@ -9,7 +9,29 @@ export default function HomePage() {
     const [loading, setLoading] = useState(false);
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [reposPerPage] = useState(6);
+    const [reposPerPage, setReposPerPage] = useState(6);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (screenWidth < 578) {
+            setReposPerPage(3);
+        } else if (screenWidth < 769) {
+            setReposPerPage(4);
+        } else {
+            setReposPerPage(6)
+        }
+    }, [screenWidth]);
 
     useEffect(() => {
         (() => {
@@ -18,7 +40,7 @@ export default function HomePage() {
                 .get("https://api.github.com/users/godswillnwabu/repos", {
                     headers: {
                         Authorization:
-                            "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",
+                            "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",
                     },
                 })
                 .then((response) => {
