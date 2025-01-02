@@ -24,9 +24,9 @@ export default function HomePage() {
     }, []);
 
     useEffect(() => {
-        if (screenWidth < 578) {
+        if (screenWidth < 768) {
             setReposPerPage(3);
-        } else if (screenWidth < 769) {
+        } else if (screenWidth < 991) {
             setReposPerPage(4);
         } else {
             setReposPerPage(6)
